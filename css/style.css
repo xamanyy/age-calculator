@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.main-content{
+    width: 46em;
+    height: 34em;
+    background-color: white;
+    border-top-right-radius: 4%;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 26%;
+    filter: drop-shadow(4px 4px 2px #e5e5e5);
+}
+
+.fields{
+    display: flex;
+    width: 100%;
+    padding: 3em;
+    /* flex-wrap: wrap; */
+}
+
+.dd, .mm, .yy{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 30%;
+    justify-content: space-evenly;
+    margin-right: 1em;
+}
+
+input{
+    width: 4.5em;
+    height: 2em;
+    margin-top: 0.2em;
+    border-radius: 7px;
+    border: 1.5px solid #ededec;
+    padding: 12px;
+    font-size:32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.ce{
+    margin-top: -2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+    padding: 0.5em;
+}
+
+.line{
+    width: 80%;
+    background-color: #ededec;
+    height: 1px;
+}
+
+.round{
+    width: 68px;
+    height: 68px;
+    background-color: #864cff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.round:hover{
+    background-color: #4403d2;
+}
+
+img{
+    width: 36px;
+    z-index: 1;
+    /* margin-left: -51px; */
+    cursor: pointer;
+}
+
+label{
+    color: #6e6e6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.format{
+    margin-top: -1em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3em;
+}
+
+.years, .months,.days{
+    display: flex;
+    align-items: center;
+    width: 28em;
+    height: 4em;
+    margin-top: 30px;
+}
+.year-field1,
+.year-field2,
+.month-field1,
+.month-field2,
+.day-field1,
+.day-field2
+{
+    height: 0.7em;
+    width: 2em;
+    background-color: #864cff;
+    margin-right: 10px;
+    transform: skew(-12deg);
+    
+}
+
+h1{
+    font-size: 80px;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.din,.saal,.mahina{
+    font-size: 80px;
+    color: #864cff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@media (max-width: 768px){
+    .main-content{
+        width: 28em;
+    }
+
+.fields{
+    width: 28em;
+}
+
+.dd, .mm, .yy{
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 56px;
+}
+
+.format{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.round{
+
+    position: absolute;
+} 
+input{
+    font-size: 26px;
+    width: 3.8em;
+}
+
+.ce{
+    margin-top: -1em;
+}
+}
